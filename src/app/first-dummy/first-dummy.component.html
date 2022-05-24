@@ -1,0 +1,36 @@
+<div class="container">
+  <h3>Notification test</h3>
+  <div class="row">
+    <button type="button" class="btn btn-success m-2" (click)="sendNotification(successType)">Send success
+      notification</button>
+    <button type="button" class="btn btn-danger m-2" (click)="sendNotification(dangerType)">Send danger
+      notification</button>
+    <button type="button" class="btn btn-warning m-2" (click)="sendNotification(warningType)">Send warning
+      notification</button>
+    <button type="button" class="btn btn-primary m-2" (click)="sendNotification(primaryType)">Send primary
+      notification</button>
+  </div>
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Value</th>
+          <th>Value</th>
+          <th>Value</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items; let index as index">
+          <td>{{index}}</td>
+          <td>{{item}}</td>
+          <td>{{item}}</td>
+          <td>{{item}}</td>
+          <td>{{item}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

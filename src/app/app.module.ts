@@ -1,14 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FirstDummyComponent } from './first-dummy/first-dummy.component';
+import { NotificationModule } from './notification/notification-module.module';
+import { SecondDummyComponent } from './second-dummy/second-dummy.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FirstDummyComponent,
+    SecondDummyComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    NotificationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
